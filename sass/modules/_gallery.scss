@@ -1,0 +1,102 @@
+.gallery {
+  padding: 20rem 0;
+  display: flex;
+  position: relative;
+
+  background-image: url(../img/gall-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  //transition: all 0.5s;
+  &__middlebox {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(
+      rgba($color-secondary, 0.5),
+      rgba($color-secondary, 0.5)
+    );
+    flex: 4;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__rightbox,
+  &__leftbox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 3rem;
+    line-height: 2.5rem;
+    color: #fff;
+    max-width: 30vw;
+    @media only screen and (max-width: 580px) {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: $color-primary-light;
+  }
+
+  a {
+    margin-left: 0;
+  }
+
+  &__dots {
+    position: absolute;
+    display: flex;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__dot {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    border: 3px solid $color-secondary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__dot::before {
+    content: "";
+    display: none;
+    position: absolute;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__dot--active::before {
+    display: block;
+  }
+
+  &__animated {
+    animation: show 0.9s ease-in;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

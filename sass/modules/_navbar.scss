@@ -1,0 +1,139 @@
+.navbar {
+  background-color: $color-secondary;
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: 20vw 1fr 20vw;
+
+  justify-items: end;
+  align-items: center;
+
+  // &__minibar {
+  //   grid-column: 1 / 3;
+  //   grid-row: 1/2;
+  //   background-color: $color-primary;
+  // }
+
+  &__list {
+    grid-column: 2/3;
+
+    display: flex;
+    list-style-type: none;
+
+    @media only screen and (max-width: 760px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-right: 3.5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: $font-secondary;
+    font-weight: 600;
+    display: block;
+    transition: all 0.2s;
+  }
+  &__link:hover {
+    color: $color-primary;
+    transform: scale(1.05);
+  }
+
+  &__logo {
+    fill: $color-primary;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
+
+  //******Mobile Menu (hamburger)******
+
+  &__mobileContainer {
+    grid-column: 3/4;
+    justify-self: center;
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    align-items: center;
+
+    display: none;
+
+    @media only screen and (max-width: 760px) {
+      display: flex;
+      align-self: start;
+    }
+  }
+
+  &__burger {
+    width: 6rem;
+    height: 4px;
+    display: block;
+    background-color: $color-primary;
+    transition: all 0.9s;
+    border-radius: 3px;
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: "";
+    width: 6rem;
+    height: 4px;
+    display: block;
+    background-color: $color-primary;
+    transition: all 0.9s;
+    border-radius: 3px;
+  }
+
+  &__burger::before {
+    transform: translateY(-1.4rem);
+  }
+
+  &__burger::after {
+    transform: translateY(1.1rem);
+  }
+
+  &__burger--active {
+    width: 0;
+  }
+  &__burger--active::before {
+    transform: rotate(-45deg) translateY(0.5rem);
+    height: 7px;
+    border-radius: 3px;
+  }
+  &__burger--active::after {
+    transform: rotate(45deg) translateY(-0.4rem);
+    height: 7px;
+    border-radius: 3px;
+  }
+
+  // links list
+
+  &__mobileList {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    justify-self: center;
+
+    height: 100vh;
+    justify-content: center;
+    transition: transform 0.5s;
+
+    & > * {
+      margin: 3rem;
+      transform: scale(2.2);
+      text-align: center;
+    }
+  }
+}

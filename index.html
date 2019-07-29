@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steakville Restaurant</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Literata:400,600|Montserrat:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <svg class="navbar__logo">
+            <use xlink:href="icons/sprite.svg#meat"></use>
+        </svg>
+        <ul class="navbar__mobileList">
+            <li class="navbar__item"><a href="#header" class="navbar__link">home</a></li>
+            <li class="navbar__item"><a href="#reservation" class="navbar__link">reservations</a></li>
+            <li class="navbar__item"><a href="#menu" class="navbar__link">menu</a></li>
+            <li class="navbar__item"><a href="#hours" class="navbar__link">blog</a></li>
+            <li class="navbar__item"><a href="#gallery" class="navbar__link">features</a></li>
+            <li class="navbar__item"><a href="#customers" class="navbar__link">contact</a></li>
+        </ul>
+
+        <div class="navbar__mobileContainer">
+            <span class="navbar__burger"></span>
+
+        </div>
+
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#header" class="navbar__link">home</a></li>
+            <li class="navbar__item"><a href="#reservation" class="navbar__link">reservations</a></li>
+            <li class="navbar__item"><a href="#menu" class="navbar__link">menu</a></li>
+            <li class="navbar__item"><a href="#hours" class="navbar__link">blog</a></li>
+            <li class="navbar__item"><a href="#gallery" class="navbar__link">features</a></li>
+            <li class="navbar__item"><a href="#customers" class="navbar__link">contact</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="header">
+        <h3 class="heading-3">Welcome to</h3>
+        <h1 class="heading-1">Steakville Restaurant</h1>
+        <p class="header__text">New Scotland Yard, 8-10 Brodway, Westminster, London SW1H 0BG</p>
+        <img src="img/Arrow.png" alt="Arrow" class="arrow">
+        <a href="#menu" class="btn" id="header__menu__link">menu</a>
+
+    </header>
+    <section class="about">
+        <img src="img/vintage.jpg" alt="Vintage" class="about__img about__img--1">
+        <img src="img/food.jpg" alt="Food" class="about__img about__img--2">
+        <div class="about__box">
+            <h3 class="heading-3 about__heading">Welcome to</h3>
+            <h2 class="heading-2">Steakville</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat,
+                dignissimos expedita aliquid animi ut, rem deleniti magnam ducimus repellendus eum obcaecati.
+                Officia, nihil. Beatae atque earu. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                totam cumque dignissimos doloribus! Quas, doloribus,rem deleniti magnam ducimus. </p>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>"Ask not what you can do for your country. Ask what's for lunch"</p>
+        <h3 class="heading-3">John Welles</h3>
+    </section>
+
+    <section class="gallery gallery__animated" id="gallery">
+        <div class="gallery__leftbox">
+            <svg class="gallery__icon">
+                <use xlink:href="icons/sprite-2.svg#icon-coffee"></use>
+            </svg>
+        </div>
+        <div class="gallery__middlebox">
+            <h3 class="heading-3 galerry__heading-3">The Best Cuisine</h3>
+            <h2 class="heading-2 heading-2--white">in your town</h2>
+            <p class="gallery__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum numquam soluta culpa
+                perspiciatis, cum voluptas quam? Ipsam nihil rerum cumque molestiae dolore corrupti sed, natus
+                accusantium, tempora iusto nam, et quae dolores quaerat sint?
+            </p>
+            <a href="#menu" class="btn">menu</a>
+        </div>
+        <div class="gallery__rightbox">
+            <svg class="gallery__icon">
+                <use xlink:href="icons/sprite-2.svg#icon-cutlery"></use>
+            </svg>
+        </div>
+
+        <div class="gallery__dots">
+            <span class="gallery__dot gallery__dot--active" id="dot-1"></span>
+            <span class="gallery__dot" id="dot-2"></span>
+            <span class="gallery__dot" id="dot-3"></span>
+            <span class="gallery__dot" id="dot-4"></span>
+            <span class="gallery__dot" id="dot-5"></span>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h3 class="heading-3">Our Dishes</h3>
+        <h2 class="heading-2">menu</h2>
+        <div class="menu__cards">
+            <div class="card card--1">
+                <img src="img/Layer 5.png" alt="Burger 1" class="card__img card__img--1">
+                <p class="card__title">BBQ chicken</p>
+                <span class="card__subtitle">Big and Meaty</span>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem
+                    esse?
+                    Voluptate vero libero, vel cum corporis.</p>
+                <span class="card__price">$50.00</span>
+            </div>
+            <div class="card card--2">
+                <img src="img/Layer 7.png" alt="Burger 2" class="card__img card__img--2">
+                <p class="card__title">whope sandwich</p>
+                <span class="card__subtitle">Big and Meaty</span>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem
+                    esse?
+                    Voluptate vero libero, vel cum corporis.</p>
+                <span class="card__price">$45.50</span>
+            </div>
+            <div class="card card--3">
+                <img src="img/Layer 8.png" alt="Burger 3" class="card__img card__img--3">
+                <p class="card__title">homestyle burger</p>
+                <span class="card__subtitle">Big and Meaty</span>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem
+                    esse?
+                    Voluptate vero libero, vel cum corporis.</p>
+                <span class="card__price">$34.00</span>
+            </div>
+            <div class="card card--4">
+                <img src="img/Layer 9.png" alt="Burger 4" class="card__img card__img--4">
+                <p class="card__title">bacon sandwich</p>
+                <span class="card__subtitle">Big and Meaty</span>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem
+                    esse?
+                    Voluptate vero libero, vel cum corporis.</p>
+                <span class="card__price">$75.00</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="hours" id="hours">
+        <h3 class="heading-3">Your Welcome</h3>
+        <h2 class="heading-2 heading-2--white">opening hours</h2>
+        <div class="hours__box">
+            <img src="img/cafe.jpg" alt="Cafe stairs" class="hours__img">
+            <div class="hours__info">
+                <div class="hours__meals">
+                    <h5>dinner:</h5>
+                    <span>Tuesday to Saturday 5.30 pm til 9.00 pm</span>
+                    <span>Bank Holiday Sundays 6pm til 9pm</span>
+                </div>
+                <div class="hours__meals">
+                    <h5>lunch:</h5>
+                    <span>Friday 12.30 til 2.30pm</span>
+                    <span>Sunday 12.30 til 4 pm</span>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="staff">
+        <h3 class="heading-3">Our staff</h3>
+        <h2 class="heading-2 heading-2--white">meet our chefs</h2>
+        <div class="staff__chef">
+            <img src="img/cook-1.png" alt="Cook 1" class="staff__img">
+            <span class="staff__name">James T Kirk</span>
+            <span class="staff__title">Captain</span>
+            <div class="staff__icons">
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-eye"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-linkedin-alt"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-twitter-alt"></use>
+                </svg>
+            </div>
+            <p class="staff__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut sint placeat.Eaque officia pariatur
+                qui nesciunt nihil commodi.
+            </p>
+        </div>
+        <div class="staff__chef">
+            <img src="img/cook-2.png" alt="Cook 2" class="staff__img">
+            <span class="staff__name">Leonardo mccoy</span>
+            <span class="staff__title">Doctor</span>
+            <div class="staff__icons">
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-eye"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-linkedin-alt"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-twitter-alt"></use>
+                </svg>
+            </div>
+            <p class="staff__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut sint placeat. Eaque officia
+                pariatur qui nesciunt nihil commodi.
+            </p>
+        </div>
+        <div class="staff__chef">
+            <img src="img/cook-3.png" alt="Cook 3" class="staff__img">
+            <span class="staff__name">hakaru sulu</span>
+            <span class="staff__title">Pilot</span>
+            <div class="staff__icons">
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-eye"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-linkedin-alt"></use>
+                </svg>
+                <svg class="staff__icon">
+                    <use xlink:href="icons/sprite-2.svg#icon-twitter-alt"></use>
+                </svg>
+            </div>
+            <p class="staff__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut sint placeat. Eaque officia
+                pariatur qui nesciunt nihil commodi.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="reservation" id="reservation">
+        <h3 class="heading-3">Reservation</h3>
+        <h2 class="heading-2 heading-2--white">book a table</h2>
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <form action="submit">
+            <input class="reservation__time" type="time" placeholder="Time">
+            <input class="reservation__date" type="date" placeholder="Date">
+            <select name="People" class="reservation__people">
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                <option value="9">9 People</option>
+                <option value="9+">9+ People</option>
+            </select>
+            <button class="btn reservation__btn">book a table</button>
+        </form>
+
+    </section>
+    <section class="customers" id="customers">
+        <h3 class="heading-3">Our Best Clients</h3>
+        <h2 class="heading-2">happy customers</h2>
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <p class="customers__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia delectus nobis
+            vitae non, qui cumque, voluptate optio, tenetur itaque vero incidunt. Voluptates rem numquam facilis a
+            maxime! Cupiditate, rerum unde. Distinctio in cupiditate corporis minima possimus?"</p>
+        <span class="customers__name">bad comedian</span>
+        <span class="customers__profession">Movie Critic</span>
+        <span class="customers__subs">subscribe to our newsletter</span>
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <input type="email" class="customers__email" placeholder="Email">
+        <button class="btn customers__btn">subscribe</button>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
