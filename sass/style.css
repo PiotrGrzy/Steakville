@@ -52,6 +52,11 @@ html {
   color: #fff;
 }
 
+.heading-2--about {
+  font-size: 3.8rem;
+  letter-spacing: 0.1em;
+}
+
 .btn {
   display: block;
   text-decoration: none;
@@ -100,6 +105,12 @@ html {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 760px) {
+  .navbar {
+    padding: 0.5rem;
+  }
 }
 
 .navbar__list {
@@ -293,6 +304,15 @@ html {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(65, 52, 40, 0.5)), to(rgba(78, 64, 50, 0.5))), url(../img/restaurant-hero--small.jpg);
+    background-image: -webkit-linear-gradient(rgba(65, 52, 40, 0.5), rgba(78, 64, 50, 0.5)), url(../img/restaurant-hero--small.jpg);
+    background-image: -o-linear-gradient(rgba(65, 52, 40, 0.5), rgba(78, 64, 50, 0.5)), url(../img/restaurant-hero--small.jpg);
+    background-image: linear-gradient(rgba(65, 52, 40, 0.5), rgba(78, 64, 50, 0.5)), url(../img/restaurant-hero--small.jpg);
+  }
 }
 
 .header__text {

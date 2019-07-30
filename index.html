@@ -54,7 +54,7 @@
         <img src="img/food.jpg" alt="Food" class="about__img about__img--2">
         <div class="about__box">
             <h3 class="heading-3 about__heading">Welcome to</h3>
-            <h2 class="heading-2">Steakville</h2>
+            <h2 class="heading-2 heading-2--about">Steakville</h2>
             <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat,
                 dignissimos expedita aliquid animi ut, rem deleniti magnam ducimus repellendus eum obcaecati.
                 Officia, nihil. Beatae atque earu. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
@@ -145,7 +145,8 @@
         <h3 class="heading-3">Your Welcome</h3>
         <h2 class="heading-2 heading-2--white">opening hours</h2>
         <div class="hours__box">
-            <img src="img/cafe.jpg" alt="Cafe stairs" class="hours__img">
+            <img srcset="img/cafe--small.jpg 600w, img/cafe.jpg 1920w" alt="Cafe stairs" class="hours__img"
+                sizes="(max-width:600px) 70vw, 800x" src="img/cafe.jpg">
             <div class="hours__info">
                 <div class="hours__meals">
                     <h5>dinner:</h5>
@@ -236,8 +237,8 @@
         <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
         <form action="submit">
 
-            <input placeholder="Date" class="reservation__time" placeholder="Time" type="text"
-                onfocus="(this.type='time')" onblur="(this.type='text')" id="date">
+            <input placeholder="Time" class="reservation__time" type="text" onfocus="(this.type='time')"
+                onblur="(this.type='text')" id="date">
             <input placeholder="Date" class="reservation__date" placeholder="Date" type="text"
                 onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
 

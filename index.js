@@ -13,9 +13,16 @@
   };
 
   const changeBackGround = () => {
-    gallery.style.backgroundImage = `url(img/gall-${currentImg}.jpg)`;
-    changeDots(currentImg - 1);
-    currentImg < 5 ? currentImg++ : (currentImg = 1);
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth > 600) {
+      gallery.style.backgroundImage = `url(img/gall-${currentImg}.jpg)`;
+      changeDots(currentImg - 1);
+      currentImg < 5 ? currentImg++ : (currentImg = 1);
+    } else {
+      gallery.style.backgroundImage = `url(img/gall-${currentImg}--small.jpg)`;
+      changeDots(currentImg - 1);
+      currentImg < 5 ? currentImg++ : (currentImg = 1);
+    }
   };
 
   const handleClick = e => {
