@@ -9,6 +9,14 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 600px) {
+    background-image: linear-gradient(
+        rgba(rgb(65, 52, 40), 0.5),
+        rgba(rgb(78, 64, 50), 0.5)
+      ),
+      url(../img/restaurant-hero--small.jpg);
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
