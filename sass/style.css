@@ -640,26 +640,30 @@ html {
   color: #d8b378;
 }
 
-.reservation__time::-webkit-input-placeholder {
+.reservation__time::-webkit-input-placeholder, .reservation__date::-webkit-input-placeholder {
   font-family: "Literata", serif;
+  color: #d8b378;
   font-size: 1.8rem;
   padding: 1rem;
 }
 
-.reservation__time:-ms-input-placeholder {
+.reservation__time:-ms-input-placeholder, .reservation__date:-ms-input-placeholder {
   font-family: "Literata", serif;
+  color: #d8b378;
   font-size: 1.8rem;
   padding: 1rem;
 }
 
-.reservation__time::-ms-input-placeholder {
+.reservation__time::-ms-input-placeholder, .reservation__date::-ms-input-placeholder {
   font-family: "Literata", serif;
+  color: #d8b378;
   font-size: 1.8rem;
   padding: 1rem;
 }
 
-.reservation__time::placeholder {
+.reservation__time::placeholder, .reservation__date::placeholder {
   font-family: "Literata", serif;
+  color: #d8b378;
   font-size: 1.8rem;
   padding: 1rem;
 }
@@ -749,6 +753,14 @@ html {
   padding: 5rem;
 }
 
+@media only screen and (max-width: 450px) {
+  .card {
+    width: 40rem;
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+
 .card--1, .card--3 {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -770,6 +782,12 @@ html {
 .card__img {
   position: absolute;
   top: 50%;
+}
+
+@media only screen and (max-width: 450px) {
+  .card__img {
+    width: 15rem;
+  }
 }
 
 .card__img--1, .card__img--3 {

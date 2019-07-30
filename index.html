@@ -235,8 +235,12 @@
         <h2 class="heading-2 heading-2--white">book a table</h2>
         <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
         <form action="submit">
-            <input class="reservation__time" type="time" placeholder="Time">
-            <input class="reservation__date" type="date" placeholder="Date">
+
+            <input placeholder="Date" class="reservation__time" placeholder="Time" type="text"
+                onfocus="(this.type='time')" onblur="(this.type='text')" id="date">
+            <input placeholder="Date" class="reservation__date" placeholder="Date" type="text"
+                onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+
             <select name="People" class="reservation__people">
                 <option value="2">2 People</option>
                 <option value="3">3 People</option>

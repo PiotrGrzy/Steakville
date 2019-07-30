@@ -29,8 +29,10 @@
     color: $color-primary;
   }
 
-  &__time::placeholder {
+  &__time::placeholder,
+  &__date::placeholder {
     font-family: $font-primary;
+    color: $color-primary;
     font-size: 1.8rem;
     padding: 1rem;
   }
