@@ -60,6 +60,10 @@
     width: 5rem;
     height: 5rem;
     margin-right: 2rem;
+    @media only screen and (max-width: 760px) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
   }
 
   //******Mobile Menu (hamburger)******
@@ -82,7 +86,7 @@
 
   &__burger {
     width: 6rem;
-    height: 4px;
+    height: 2px;
     display: block;
     background-color: $color-primary;
     transition: all 0.9s;
@@ -93,7 +97,7 @@
   &__burger::after {
     content: "";
     width: 6rem;
-    height: 4px;
+    height: 2px;
     display: block;
     background-color: $color-primary;
     transition: all 0.9s;
@@ -101,24 +105,24 @@
   }
 
   &__burger::before {
-    transform: translateY(-1.4rem);
+    transform: translateY(-1.2rem);
   }
 
   &__burger::after {
-    transform: translateY(1.1rem);
+    transform: translateY(1rem);
   }
 
   &__burger--active {
     width: 0;
   }
   &__burger--active::before {
-    transform: rotate(-45deg) translateY(0.5rem);
-    height: 7px;
+    transform: rotate(-45deg) translateY(0.2rem);
+    height: 2px;
     border-radius: 3px;
   }
   &__burger--active::after {
-    transform: rotate(45deg) translateY(-0.4rem);
-    height: 7px;
+    transform: rotate(45deg) translateY(-0.1rem);
+    height: 2px;
     border-radius: 3px;
   }
 
