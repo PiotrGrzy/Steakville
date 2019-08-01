@@ -1,7 +1,7 @@
 /****** GALLERY SLIDER *******/
 
 (function() {
-  const gallery = document.querySelector(".gallery");
+  const gallery = document.querySelector(".gallery__img");
   const dotsContainer = document.querySelector(".gallery__dots");
   const dots = document.querySelectorAll(".gallery__dot");
 
@@ -15,11 +15,11 @@
   const changeBackGround = () => {
     const viewportWidth = window.innerWidth;
     if (viewportWidth > 600) {
-      gallery.style.backgroundImage = `url(img/gall-${currentImg}.jpg)`;
+      gallery.src = `img/gall-${currentImg}.jpg`;
       changeDots(currentImg - 1);
       currentImg < 5 ? currentImg++ : (currentImg = 1);
     } else {
-      gallery.style.backgroundImage = `url(img/gall-${currentImg}--small.jpg)`;
+      gallery.src = `img/gall-${currentImg}--small.jpg`;
       changeDots(currentImg - 1);
       currentImg < 5 ? currentImg++ : (currentImg = 1);
     }
@@ -52,7 +52,7 @@
 
     const touchRange = Math.abs(startX) - Math.abs(endX);
 
-    if (touchRange > 300 || touchRange < -300) {
+    if (touchRange > 150 || touchRange < -150) {
       if (startX > endX) {
         // SWIPE LEFT
         clearInterval(sliderInterval);

@@ -1,20 +1,24 @@
 .gallery {
-  padding: 20rem 0;
+  padding-bottom: 20rem;
   display: flex;
   position: relative;
 
-  background-image: url(../img/gall-1.jpg);
-  background-size: cover;
-  background-position: center;
+  transition: all 0.5s;
 
-  //transition: all 0.5s;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+
   &__middlebox {
+    margin-top: 12rem;
     display: flex;
     padding: 2rem;
-    background: linear-gradient(
-      rgba($color-secondary, 0.5),
-      rgba($color-secondary, 0.5)
-    );
     flex: 4;
     flex-direction: column;
     align-items: flex-start;
@@ -85,18 +89,5 @@
 
   &__dot--active::before {
     display: block;
-  }
-
-  &__animated {
-    animation: show 0.9s ease-in;
-  }
-
-  @keyframes show {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 }
