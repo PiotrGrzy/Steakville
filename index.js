@@ -26,11 +26,13 @@
   };
 
   const handleClick = e => {
-    const idNum = e.target.id[e.target.id.length - 1];
-    currentImg = idNum;
-    changeBackGround();
-    clearInterval(sliderInterval);
-    sliderInterval = setInterval(changeBackGround, 3000);
+    if (e.target.nodeName === "SPAN") {
+      const idNum = e.target.id[e.target.id.length - 1];
+      currentImg = idNum;
+      changeBackGround();
+      clearInterval(sliderInterval);
+      sliderInterval = setInterval(changeBackGround, 3000);
+    }
   };
 
   let sliderInterval = setInterval(changeBackGround, 3000);
