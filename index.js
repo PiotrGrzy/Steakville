@@ -1,6 +1,7 @@
 /****** GALLERY SLIDER *******/
 
 (function() {
+  const gallerySection = document.querySelector(".gallery");
   const gallery = document.querySelector(".gallery__img");
   const dotsContainer = document.querySelector(".gallery__dots");
   const dots = document.querySelectorAll(".gallery__dot");
@@ -79,8 +80,8 @@
     }
   };
 
-  gallery.addEventListener("touchstart", handleTouchStart);
-  gallery.addEventListener("touchend", handleTouchEnd);
+  gallerySection.addEventListener("touchstart", handleTouchStart);
+  gallerySection.addEventListener("touchend", handleTouchEnd);
 })();
 
 /****MOBILE MENU*****/

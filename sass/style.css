@@ -607,7 +607,7 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  bottom: 4rem;
+  bottom: 8rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -713,6 +713,12 @@ html {
   background-color: #fff0d4;
   padding: 12rem 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+  .customers {
+    padding: 8rem 0;
+  }
 }
 
 .customers__text {
@@ -869,6 +875,12 @@ html {
   background-color: #000;
 }
 
+@media only screen and (max-width: 760px) {
+  .hours {
+    padding: 8rem 0;
+  }
+}
+
 .hours__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -883,7 +895,7 @@ html {
   .hours__box {
     display: block;
     height: auto;
-    margin: 0 auto;
+    margin: 4rem auto;
   }
 }
 

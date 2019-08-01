@@ -52,10 +52,14 @@
 
     </header>
     <section class="about">
-        <img src="img/vintage.jpg" alt="Vintage" class="about__img about__img--1" data-aos="fade-down"
-            data-aos-duration="900">
-        <img src="img/food.jpg" alt="Food" class="about__img about__img--2" data-aos="fade-down"
-            data-aos-duration="900">
+
+        <img srcset="img/vintage--small.jpg 600w, img/vintage.jpg 1920w" alt="Vintage restaurant"
+            class="about__img about__img--1" sizes="(max-width:600px) 70vw, 800x" src="img/vintage.jpg"
+            data-aos="fade-down" data-aos-duration="900">
+
+        <img srcset="img/food--small.jpg 600w, img/food.jpg 1920w" alt="Food plate" class="about__img about__img--2"
+            data-aos="fade-down" data-aos-duration="900" sizes="(max-width:600px) 70vw, 800x" src="img/food.jpg">
+
         <div class="about__box">
             <h3 class="heading-3 about__heading">Welcome to</h3>
             <h2 class="heading-2 heading-2--about">Steakville</h2>
@@ -72,7 +76,7 @@
     </section>
 
     <section class="gallery" id="gallery">
-        <img src="img/gall-1.jpg" alt="Gallery image" class="gallery__img" data-aos="fade-left">
+        <img src="img/gall-1.jpg" alt="Gallery image" class="gallery__img">
         <div class="gallery__leftbox">
             <svg class="gallery__icon">
                 <use xlink:href="icons/sprite-2.svg#icon-coffee"></use>

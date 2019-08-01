@@ -1,6 +1,9 @@
 .customers {
   background-color: $color-primary-light;
   padding: 12rem 0;
+  @media only screen and (max-width: 760px) {
+    padding: 8rem 0;
+  }
   text-align: center;
   &__text {
     font-size: 1.4rem;
