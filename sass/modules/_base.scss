@@ -92,4 +92,17 @@ html {
   display: block;
   margin: 4rem auto;
   width: 8rem;
+  //animation: slideInLeft 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*****Animations*****/
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-60vw);
+  }
+
+  100% {
+    transform: translateX();
+  }
 }

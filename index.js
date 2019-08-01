@@ -113,4 +113,6 @@
   });
 })();
 
-/*********SMOOTH SCROLLING*********/
+/*********ANIMATION SCRIPT*********/
+
+AOS.init();

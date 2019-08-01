@@ -9,7 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Literata:400,600|Montserrat:400,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="shortcut icon" type="image/png" href="icons/icons8-meat-48.png">
 </head>
 
 <body>
@@ -45,13 +47,15 @@
         <h3 class="heading-3">Welcome to</h3>
         <h1 class="heading-1">Steakville Restaurant</h1>
         <p class="header__text">New Scotland Yard, 8-10 Brodway, Westminster, London SW1H 0BG</p>
-        <img src="img/Arrow.png" alt="Arrow" class="arrow">
+        <img src="img/Arrow.png" alt="Arrow" class="arrow" data-aos="slide-right">
         <a href="#menu" class="btn" id="header__menu__link">menu</a>
 
     </header>
     <section class="about">
-        <img src="img/vintage.jpg" alt="Vintage" class="about__img about__img--1">
-        <img src="img/food.jpg" alt="Food" class="about__img about__img--2">
+        <img src="img/vintage.jpg" alt="Vintage" class="about__img about__img--1" data-aos="fade-left"
+            data-aos-duration="900">
+        <img src="img/food.jpg" alt="Food" class="about__img about__img--2" data-aos="fade-left"
+            data-aos-duration="900">
         <div class="about__box">
             <h3 class="heading-3 about__heading">Welcome to</h3>
             <h2 class="heading-2 heading-2--about">Steakville</h2>
@@ -102,7 +106,7 @@
         <h3 class="heading-3">Our Dishes</h3>
         <h2 class="heading-2">menu</h2>
         <div class="menu__cards">
-            <div class="card card--1">
+            <div class="card card--1" data-aos="flip-up" data-aos-duration="1200">
                 <img src="img/Layer 5.png" alt="Burger 1" class="card__img card__img--1">
                 <p class="card__title">BBQ chicken</p>
                 <span class="card__subtitle">Big and Meaty</span>
@@ -111,7 +115,7 @@
                     Voluptate vero libero, vel cum corporis.</p>
                 <span class="card__price">$50.00</span>
             </div>
-            <div class="card card--2">
+            <div class="card card--2" data-aos="flip-up" data-aos-duration="1200">
                 <img src="img/Layer 7.png" alt="Burger 2" class="card__img card__img--2">
                 <p class="card__title">whope sandwich</p>
                 <span class="card__subtitle">Big and Meaty</span>
@@ -120,7 +124,7 @@
                     Voluptate vero libero, vel cum corporis.</p>
                 <span class="card__price">$45.50</span>
             </div>
-            <div class="card card--3">
+            <div class="card card--3" data-aos="flip-up" data-aos-duration="1200">
                 <img src="img/Layer 8.png" alt="Burger 3" class="card__img card__img--3">
                 <p class="card__title">homestyle burger</p>
                 <span class="card__subtitle">Big and Meaty</span>
@@ -129,7 +133,7 @@
                     Voluptate vero libero, vel cum corporis.</p>
                 <span class="card__price">$34.00</span>
             </div>
-            <div class="card card--4">
+            <div class="card card--4" data-aos="flip-up" data-aos-duration="1200">
                 <img src="img/Layer 9.png" alt="Burger 4" class="card__img card__img--4">
                 <p class="card__title">bacon sandwich</p>
                 <span class="card__subtitle">Big and Meaty</span>
@@ -168,7 +172,7 @@
     <section class="staff">
         <h3 class="heading-3">Our staff</h3>
         <h2 class="heading-2 heading-2--white">meet our chefs</h2>
-        <div class="staff__chef">
+        <div class="staff__chef" data-aos="flip-right" data-aos-duration="1200">
             <img src="img/cook-1.png" alt="Cook 1" class="staff__img">
             <span class="staff__name">James T Kirk</span>
             <span class="staff__title">Captain</span>
@@ -188,7 +192,7 @@
                 qui nesciunt nihil commodi.
             </p>
         </div>
-        <div class="staff__chef">
+        <div class="staff__chef" data-aos="flip-right" data-aos-duration="1200">
             <img src="img/cook-2.png" alt="Cook 2" class="staff__img">
             <span class="staff__name">Leonardo mccoy</span>
             <span class="staff__title">Doctor</span>
@@ -208,7 +212,7 @@
                 pariatur qui nesciunt nihil commodi.
             </p>
         </div>
-        <div class="staff__chef">
+        <div class="staff__chef" data-aos="flip-right" data-aos-duration="1200">
             <img src="img/cook-3.png" alt="Cook 3" class="staff__img">
             <span class="staff__name">hakaru sulu</span>
             <span class="staff__title">Pilot</span>
@@ -234,7 +238,7 @@
     <section class="reservation" id="reservation">
         <h3 class="heading-3">Reservation</h3>
         <h2 class="heading-2 heading-2--white">book a table</h2>
-        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow" data-aos="slide-right">
         <form action="submit">
 
             <input placeholder="Time" class="reservation__time" type="text" onfocus="(this.type='time')"
@@ -260,19 +264,19 @@
     <section class="customers" id="customers">
         <h3 class="heading-3">Our Best Clients</h3>
         <h2 class="heading-2">happy customers</h2>
-        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow" data-aos="slide-right">
         <p class="customers__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia delectus nobis
             vitae non, qui cumque, voluptate optio, tenetur itaque vero incidunt. Voluptates rem numquam facilis a
             maxime! Cupiditate, rerum unde. Distinctio in cupiditate corporis minima possimus?"</p>
         <span class="customers__name">bad comedian</span>
         <span class="customers__profession">Movie Critic</span>
         <span class="customers__subs">subscribe to our newsletter</span>
-        <img src="img/Arrow.png" alt="Arrow 2" class="arrow">
+        <img src="img/Arrow.png" alt="Arrow 2" class="arrow" data-aos="slide-right">
         <input type="email" class="customers__email" placeholder="Email">
         <button class="btn customers__btn">subscribe</button>
 
     </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="index.js"></script>
 </body>
 

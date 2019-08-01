@@ -87,6 +87,28 @@ html {
   width: 8rem;
 }
 
+/*****Animations*****/
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-60vw);
+            transform: translateX(-60vw);
+  }
+  100% {
+    -webkit-transform: translateX();
+            transform: translateX();
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-60vw);
+            transform: translateX(-60vw);
+  }
+  100% {
+    -webkit-transform: translateX();
+            transform: translateX();
+  }
+}
+
 .navbar {
   background-color: #312f2f;
   color: white;
