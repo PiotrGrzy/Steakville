@@ -53,8 +53,8 @@
 
     const touchRange = Math.abs(startX) - Math.abs(endX);
 
-    if (touchRange > 150 || touchRange < -150) {
-      if (startX > endX) {
+    if (touchRange > 50 || touchRange < -50) {
+      if (startX < endX) {
         // SWIPE LEFT
         clearInterval(sliderInterval);
         sliderInterval = setInterval(changeBackGround, 3000);
