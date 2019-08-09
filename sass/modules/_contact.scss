@@ -1,0 +1,63 @@
+.contact {
+  display: flex;
+  height: 60rem;
+  align-items: center;
+
+  @media (max-width: 760px) {
+    height: 120rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__map {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+  }
+  &__canvas {
+    display: block;
+
+    overflow: hidden;
+    background: none;
+    height: 90%;
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  &__adress {
+    position: relative;
+    flex: 1;
+    padding: 12rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 760px) {
+      width: 100%;
+      padding: 8rem 2rem;
+    }
+  }
+
+  &__adress::before {
+    content: "";
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 200;
+    border: 1px solid $color-primary;
+  }
+
+  &__heading-2 {
+    margin-bottom: 4rem;
+  }
+  & span {
+    display: block;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-family: $font-primary;
+    text-align: center;
+    font-weight: 600;
+  }
+}
