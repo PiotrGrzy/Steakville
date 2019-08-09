@@ -1,10 +1,10 @@
 .contact {
   display: flex;
-  height: 60rem;
+  //height: 60rem;
   align-items: center;
 
   @media (max-width: 760px) {
-    height: 120rem;
+    // height: 120rem;
     flex-direction: column;
     justify-content: center;
   }
