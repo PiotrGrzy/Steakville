@@ -39,6 +39,7 @@
     }
     &--2 {
       grid-column: 3/4;
+
       @media only screen and (max-width: 840px) {
         grid-row: 2/3;
       }
@@ -52,7 +53,6 @@
 
   &__box {
     background-color: rgb(254, 254, 254);
-
     height: 80%;
     width: 120%;
     @media only screen and (max-width: 580px) {
@@ -73,7 +73,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 3.6rem;
       height: 2rem;

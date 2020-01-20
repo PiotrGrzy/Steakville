@@ -1,11 +1,13 @@
 .header {
+  // margin-top: 4rem;
   padding: 20rem 0;
+  min-height: 90vh;
 
   background-image: linear-gradient(
       rgba(rgb(65, 52, 40), 0.5),
       rgba(rgb(78, 64, 50), 0.5)
     ),
-    url("../img/restaurant-hero.jpg");
+    url('../img/restaurant-hero.jpg');
   background-size: cover;
   background-position: center;
 
@@ -14,7 +16,7 @@
         rgba(rgb(65, 52, 40), 0.5),
         rgba(rgb(78, 64, 50), 0.5)
       ),
-      url("../img/restaurant-hero--small.jpg");
+      url('../img/restaurant-hero--small.jpg');
   }
 
   display: flex;
